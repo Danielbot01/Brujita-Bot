@@ -21,7 +21,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `_*Chinga a tu Madre*_
+    const str = `_*Brujita-Bot*_
 
  ▢ *Hola,* ${taguser}
 
@@ -31,7 +31,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  ▢ *Experiencia:* ${exp}
  ▢ *Rango:* ${role}
  ▢ *Diamantes:* ${limit}
- ▢ *ChingaCoins:* ${money}
+ ▢ *BrujitaCoins:* ${money}
  ▢ *Tokens:* ${joincount}
  ▢ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
  ${readMore}
