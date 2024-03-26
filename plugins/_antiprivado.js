@@ -8,7 +8,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
   if (bot.antiPrivate && !isOwner && !isROwner) {
-    await m.reply(`_*< ANTI-PRIVADO />*_\n\n*HOLA, SOY  Brujita-Bot , PARA HABLAR AL PRIVADO SOLO ES POSIBLE CON MI CREADOR, SI QUIERES ALQUILARME ENTRA AL SIGUIENTE GRUPO https://chat.whatsapp.com/Ixwj9I1IhUEGBsUSZvL5PA* `, false, {mentions: [m.sender]});
+    await m.reply(`_*< ANTI-PRIVADO />*_\n\nHOLA, SOY  Bruji-Bot , PARA HABLAR AL PRIVADO SOLO ES POSIBLE CON MI CREADOR, SI QUIERES ALQUILARME ENTRA AL SIGUIENTE GRUPO https://chat.whatsapp.com/J3BVXvEeyxSH7k4jTAeW97O puedes comunicarte directamente con mi creador +52 5573874303 `, false, {mentions: [m.sender]});
     await this.updateBlockStatus(m.chat, 'block');
   }
   return !1;
